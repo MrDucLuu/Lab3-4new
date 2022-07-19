@@ -1,16 +1,25 @@
-<script >
-export default{
-  
-}
+<script>
+import AppHeader from "@/components/AppHeader.vue";
+
+export default {
+  components: {
+    AppHeader,
+  },
+};
 </script>
 
 <template>
-<h1>Hello lab3-4</h1>
-</template>
+  <div id="app">
+    <AppHeader />
 
-<style >
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div>
+</template>
+<style>
 .page {
   max-width: 400px;
   margin: auto;
-}
+} 
 </style>
